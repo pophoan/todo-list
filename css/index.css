@@ -1,0 +1,167 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(90deg, #FF9A8B, #FF6A88, #FF99AC);
+}
+
+li {
+  list-style-type: none;
+}
+
+.items {
+  margin: 100px auto;
+  padding: 40px;
+  width: 800px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+.items .head {
+  text-align: center;
+  color: #303030;
+}
+
+.items .head h1 {
+  color: #FF6A88;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+.items .head h1 span {
+  font-size: 40px;
+  padding-left: 12px;
+}
+
+.items .head .info {
+  position: relative;
+}
+
+.items .head .info input {
+  padding-top: 3px;
+  margin-top: 20px;
+  padding-left: 30px;
+  width: 500px;
+  height: 50px;
+  outline: none;
+  background: #e6e6e6;
+  border: none;
+  border-radius: 30px;
+}
+
+.items .head .info input::placeholder {
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: #a3a3a3;
+}
+
+.items .head .info .del {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  width: 80px;
+  height: 50px;
+  background-color: #FF6A88;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.items .head .info .del span {
+  font-size: 20px;
+  color: #ffffff;
+  transition: all 1s;
+}
+
+.items .head .info .del:hover {
+  animation: scale 1s alternate infinite linear;
+}
+
+.items .head .info .del:hover span {
+  animation: scale 1s alternate infinite linear;
+}
+
+@keyframes scale {
+  0% {
+    font-size: 20px;
+    background-color: #FF6A88;
+  }
+
+  100% {
+    font-size: 25px;
+    background-color: #FF9A8B;
+  }
+}
+
+.title {
+  margin-top: 30px;
+  margin-left: 130px;
+  margin-bottom: 10px;
+  width: 90px;
+  height: 30px;
+  font-size: 16px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 400;
+  color: white;
+  background-color: #FF6A88;
+  border-radius: 10px;
+}
+
+.title span {
+  margin-right: 5px;
+}
+
+.wait {
+  margin-top: 30px;
+  margin-left: 130px;
+}
+
+.wait li {
+  width: 450px;
+  justify-content: space-between;
+  margin-top: 20px;
+  display: flex;
+  margin-left: 15px;
+  letter-spacing: 2px;
+  color: #4b4b4b;
+}
+
+.wait li input {
+  display: block;
+  outline: none;
+  width: 25px;
+  height: 25px;
+  appearance: none;
+  border: 2px solid #FF6A88;
+  border-radius: 30px;
+  transition: all 0.5s;
+}
+
+.wait li input:checked {
+  width: 20px;
+  height: 20px;
+  border: none;
+  background-color: #FF6A88;
+}
+
+.wait li .content {
+  margin-left: 10px;
+  flex: 1;
+  display: inline-block;
+  font-size: 18px;
+
+  transition: all 1s;
+}
+
+.wait li .del {
+  cursor: pointer;
+}
+
+.todo_done {
+  text-decoration: line-through;
+}
